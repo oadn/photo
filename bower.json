@@ -1,0 +1,30 @@
+{
+  "name": "oadn.photo",
+  "homepage": "https://github.com/oadn/photo",
+  "authors": [
+    "Agustin Moyano <agustin.moyano@gmail.com>"
+  ],
+  "description": "Photo booth for angular material",
+  "main": [
+    "photo.directive.js",
+    "photo.css"
+  ],
+  "keywords": [
+    "photo",
+    "angular",
+    "material"
+  ],
+  "license": "GPL-v3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ng-img-crop": "ngImgCrop#^0.3.2",
+    "webcam": "webcam-directive#^3.1.1",
+    "ng-file-upload": "^12.0.4"
+  }
+}

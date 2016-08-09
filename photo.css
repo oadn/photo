@@ -1,0 +1,44 @@
+oadn-photo.ng-invalid.ng-dirty img.done {
+  border: 1px solid red; }
+
+oadn-photo:not([disabled]) .fabToolbar.show {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  display: block; }
+
+oadn-photo {
+  position: relative;
+  /*md-fab-speed-dial.show md-fab-trigger {
+      transition: all 0.3s ease-in-out;
+      transform: scale(1);
+      display: block;
+  }
+
+  md-fab-speed-dial md-fab-trigger {
+      transition: all 0.3s ease-in-out;
+      transform: scale(0);
+  }*/ }
+  oadn-photo .cropArea {
+    background: #E4E4E4;
+    overflow: hidden;
+    height: 160px;
+    width: 160px; }
+  oadn-photo .static {
+    position: relative; }
+  oadn-photo .fabToolbar {
+    height: 56px; }
+  oadn-photo .fabToolbar.abs {
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+  oadn-photo button.md-fab .material-icons {
+    display: block !important; }
+  oadn-photo img.done {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+    height: 160px;
+    width: 160px; }
+
+/*# sourceMappingURL=photo.css.map */

@@ -51,7 +51,7 @@
     '  <webcam channel="channel" ng-click="snapshot()"></webcam>' +
     '</div>' +
     '<div ng-show="state==\'done\'" layout="column" class="static" ng-mouseenter="hovered=true" ng-mouseleave="hovered=false">' +
-    '  <div ng-class="{show: hovered}" class="fabToolbar abs">' +
+    '  <div ng-if="edit" ng-class="{show: hovered}" class="fabToolbar abs">' +
     '    <md-button type="button" class="md-fab md-mini" ngf-select ng-model="selected">' +
     '      <md-tooltip md-direction="bottom" md-visible="tooltipVisible" md-autohide="false">' +
     '        Upload' +
@@ -77,9 +77,11 @@
       restrict: 'E',
       template: template,
       scope: {
-        image: '=ngModel'
+        image: '=ngModel',
+	edit: '='
       },
       controller: function($scope) {
+	if(!$scope.hasOwnProperty('edit')) $scope.edit = true;
         $scope.state = 'done';
         $scope.imgResult = '';
         $scope.selected = null;
